@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import { Menu, X, GraduationCap } from "lucide-react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Programs", href: "#programs" },
-  { label: "Leadership", href: "#leadership" },
-  { label: "KidsCodeGift", href: "#kidscode" },
-  { label: "Events", href: "#events" },
-  { label: "Admissions", href: "#admissions" },
+  { label: "About", href: "/about" },
+  { label: "Programs", href: "/programs" },
+  { label: "Leadership", href: "/leadership" },
+  { label: "KidsCode", href: "/kidscode" },
+  { label: "Events", href: "/#events" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center gap-3 group">
             <div className="relative w-11 h-11 rounded-xl glass-green glow-green flex items-center justify-center group-hover:scale-105 transition-transform">
               <GraduationCap className="w-6 h-6 text-[#4CAF75]" />
               <div className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-[#C9A84C] animate-pulse-glow" />
@@ -65,7 +65,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#admissions"
+              href="/admissions"
               className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#1B6B3A] to-[#2A8A50] text-white text-sm font-semibold hover:shadow-[0_0_20px_rgba(27,107,58,0.5)] transition-all duration-300 hover:scale-105"
             >
               Apply Now
@@ -97,7 +97,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#admissions"
+            href="/admissions"
             onClick={() => setMenuOpen(false)}
             className="mt-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[#1B6B3A] to-[#2A8A50] text-white text-sm font-semibold text-center"
           >
