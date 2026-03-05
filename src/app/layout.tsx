@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     "Al-Madinah School Queens — a New York State approved Islamic school where faith, academic excellence, and leadership converge. Pre-K through Grade 9.",
   keywords:
     "Islamic school Queens NY, Al-Madinah School, Islamic education New York, leadership academy, Arabic Quran studies, NYS approved school",
+  icons: {
+    icon: "/Almadinah-logo.png",
+    apple: "/Almadinah-logo.png",
+  },
   openGraph: {
     title: "Al-Madinah School Queens | Raising Tomorrow's Leaders",
     description:

@@ -13,6 +13,7 @@ const programs = [
     tags: ["ELA", "Math", "Science", "Social Studies"],
     color: "#2A8A50",
     accent: "#1B6B3A",
+    href: "/programs/nys-core",
   },
   {
     icon: Moon,
@@ -22,6 +23,7 @@ const programs = [
     tags: ["Quran", "Tajweed", "Fiqh", "Aqeedah"],
     color: "#C9A84C",
     accent: "#A07830",
+    href: "/programs/quran-islamic-studies",
   },
   {
     icon: Globe,
@@ -31,6 +33,7 @@ const programs = [
     tags: ["Fusha Arabic", "Reading", "Writing", "Conversation"],
     color: "#0EA5A0",
     accent: "#0C8480",
+    href: "/programs/arabic-language",
   },
   {
     icon: Calculator,
@@ -40,6 +43,7 @@ const programs = [
     tags: ["Coding", "Science Labs", "Math", "Technology"],
     color: "#E8C96A",
     accent: "#C9A84C",
+    href: "/programs/stem",
   },
   {
     icon: FlaskConical,
@@ -49,6 +53,7 @@ const programs = [
     tags: ["Public Speaking", "Projects", "Ethics", "Community"],
     color: "#9B7EDE",
     accent: "#7C5CBF",
+    href: "/programs/leadership-development",
   },
   {
     icon: Music,
@@ -58,6 +63,7 @@ const programs = [
     tags: ["Calligraphy", "Visual Arts", "PE", "Culture"],
     color: "#E8856A",
     accent: "#C96A50",
+    href: "/programs/arts-enrichment",
   },
 ];
 
@@ -83,11 +89,12 @@ export default function Programs() {
 
         {/* Programs grid */}
         <AnimateStagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {programs.map(({ icon: Icon, title, grades, desc, tags, color, accent }, i) => (
-            <motion.div
+          {programs.map(({ icon: Icon, title, grades, desc, tags, color, accent, href }, i) => (
+            <motion.a
               key={title}
+              href={href}
               variants={staggerChild}
-              className="group relative glass rounded-3xl p-7 hover:scale-[1.02] transition-all duration-400 overflow-hidden cursor-pointer"
+              className="group relative glass rounded-3xl p-7 hover:scale-[1.02] transition-all duration-400 overflow-hidden cursor-pointer block"
             >
               {/* Hover background */}
               <div
@@ -142,7 +149,7 @@ export default function Programs() {
                 className="absolute bottom-0 left-0 right-0 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
                 style={{ background: `linear-gradient(90deg, ${color}, ${accent})` }}
               />
-            </motion.div>
+            </motion.a>
           ))}
         </AnimateStagger>
 

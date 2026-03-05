@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -34,9 +35,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <div className="relative w-11 h-11 rounded-xl glass-green glow-green flex items-center justify-center group-hover:scale-105 transition-transform">
-              <GraduationCap className="w-6 h-6 text-[#4CAF75]" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-[#C9A84C] animate-pulse-glow" />
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden group-hover:scale-105 transition-transform flex-shrink-0">
+              <Image
+                src="/Almadinah-logo.png"
+                alt="Al-Madinah School Queens"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <div className="leading-tight">
               <div className="text-white font-bold text-base tracking-wide">
