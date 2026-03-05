@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 export const BASE_URL = "https://almadinah-school-website.vercel.app";
 export const SCHOOL_NAME = "Al-Madinah School Queens";
-export const SCHOOL_PHONE = "(718) 657-7791";
+export const SCHOOL_PHONE = "(347) 507-0167";
 export const SCHOOL_EMAIL = "info@almadinahqueens.com";
-export const SCHOOL_ADDRESS = "153-27 89th Ave, Jamaica, NY 11432";
-export const SCHOOL_CITY = "Jamaica, Queens, New York";
+export const SCHOOL_ADDRESS = "2424 Steinway Street, Astoria, NY 11103";
+export const SCHOOL_CITY = "Astoria, Queens, New York";
 
 export function buildMetadata({
   title,
@@ -67,28 +67,31 @@ export const schoolJsonLd = {
   email: SCHOOL_EMAIL,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "153-27 89th Ave",
-    addressLocality: "Jamaica",
+    streetAddress: "2424 Steinway Street",
+    addressLocality: "Astoria",
     addressRegion: "NY",
-    postalCode: "11432",
+    postalCode: "11103",
     addressCountry: "US",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 40.7019,
-    longitude: -73.7937,
+    latitude: 40.7728,
+    longitude: -73.9301,
   },
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:30", closes: "15:30" },
+  ],
   description:
     "Al-Madinah School Queens — NYS approved Islamic school offering Pre-K through Grade 9. Combining Islamic values with academic excellence and leadership development.",
   foundingDate: "2000",
   numberOfEmployees: { "@type": "QuantitativeValue", value: 30 },
   areaServed: [
+    "Astoria, Queens, New York",
+    "Long Island City, NY",
+    "Sunnyside, NY",
+    "Jackson Heights, NY",
+    "Flushing, NY",
     "Queens, New York",
-    "Jamaica, NY",
-    "Hollis, NY",
-    "St. Albans, NY",
-    "Springfield Gardens, NY",
-    "Rosedale, NY",
     "Brooklyn, NY",
   ],
   hasCredential: {

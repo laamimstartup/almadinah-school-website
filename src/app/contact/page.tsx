@@ -66,7 +66,7 @@ export default function ContactPage() {
               <AnimateIn direction="right">
                 <h2 className="text-2xl font-black text-white mb-6">Contact Information</h2>
 
-                <a href={`tel:${SCHOOL_PHONE.replace(/[^0-9]/g, "")}`}
+                <a href="tel:3475070167"
                   className="flex items-center gap-4 glass rounded-2xl p-5 hover:border-[#C9A84C]/25 transition-all duration-300 group block mb-4">
                   <div className="w-12 h-12 rounded-xl bg-[#C9A84C]/15 border border-[#C9A84C]/25 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <Phone className="w-5 h-5 text-[#C9A84C]" />
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   <div>
                     <div className="text-xs text-white/40 mb-0.5">Phone</div>
                     <div className="text-white font-semibold">{SCHOOL_PHONE}</div>
-                    <div className="text-white/40 text-xs">Mon–Fri · 8am–4pm</div>
+                    <div className="text-white/40 text-xs">Mon–Fri · 7:30am–3:30pm</div>
                   </div>
                 </a>
 
@@ -107,8 +107,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="text-xs text-white/40 mb-0.5">Office Hours</div>
-                    <div className="text-white font-semibold text-sm">Monday – Friday</div>
-                    <div className="text-white/40 text-xs">8:00 AM – 4:00 PM EST</div>
+                    <div className="text-white font-semibold text-sm">Mon – Fri: 7:30 AM – 3:30 PM</div>
+                    <div className="text-white/40 text-xs">Sat – Sun: Closed</div>
                   </div>
                 </div>
 
@@ -258,7 +258,7 @@ export default function ContactPage() {
           <div className="relative h-72 md:h-96 overflow-hidden border-t border-white/5">
             <iframe
               title="Al-Madinah School Queens Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.3!2d-73.7937!3d40.7019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzA3LjAiTiA3M8KwNDcnMzcuMyJX!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8!2d-73.9327!3d40.7728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f3e8f0b1b1b%3A0x0!2s2424+Steinway+St%2C+Astoria%2C+NY+11103!5e0!3m2!1sen!2sus!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)" }}

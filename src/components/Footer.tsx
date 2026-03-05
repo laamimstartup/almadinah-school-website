@@ -1,6 +1,7 @@
 "use client";
 
-import { GraduationCap, Heart, ExternalLink, Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
+import { Heart, ExternalLink, Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
   School: [
@@ -81,8 +82,8 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 rounded-xl glass-green flex items-center justify-center">
-                <GraduationCap className="w-6 h-6 text-[#4CAF75]" />
+              <div className="relative w-11 h-11 rounded-xl overflow-hidden flex-shrink-0">
+                <Image src="/Almadinah-logo.png" alt="Al-Madinah School Queens" fill className="object-contain" />
               </div>
               <div>
                 <div className="text-white font-bold text-base">Al-Madinah School</div>
@@ -97,17 +98,17 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="space-y-3 mb-6">
-              <a href="tel:+17185551234" className="flex items-center gap-3 text-white/50 hover:text-white/80 transition-colors text-sm group">
+              <a href="tel:3475070167" className="flex items-center gap-3 text-white/50 hover:text-white/80 transition-colors text-sm group">
                 <Phone className="w-4 h-4 text-[#C9A84C] flex-shrink-0" />
-                (718) 555-1234
+                (347) 507-0167
               </a>
               <a href="mailto:info@almadinahqueens.com" className="flex items-center gap-3 text-white/50 hover:text-white/80 transition-colors text-sm">
                 <Mail className="w-4 h-4 text-[#C9A84C] flex-shrink-0" />
                 info@almadinahqueens.com
               </a>
-              <div className="flex items-center gap-3 text-white/50 text-sm">
-                <MapPin className="w-4 h-4 text-[#C9A84C] flex-shrink-0" />
-                Queens, New York
+              <div className="flex items-start gap-3 text-white/50 text-sm">
+                <MapPin className="w-4 h-4 text-[#C9A84C] flex-shrink-0 mt-0.5" />
+                <span>2424 Steinway Street<br />Astoria, NY 11103</span>
               </div>
             </div>
 
